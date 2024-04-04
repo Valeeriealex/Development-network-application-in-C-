@@ -1,12 +1,12 @@
 # Development-of-a-network-application-in-C-
 
 ## **Сетевые протоколы**
-
-  **IPAddress[] adredress = Dns.GetHostAddresses(host, System.Net.Sockets.AddresFamily.InterNetwork);**
-
-  Класс **= new Ping ()**
-  Позволяет приложению определить, доступен ли удаленный компьютер по сети.
-
+    ```C#
+    IPAddress[] adredress = Dns.GetHostAddresses(host, System.Net.Sockets.AddresFamily.InterNetwork);
+    Ping pingSender = new Ping ();
+    ```
+    Класс **= new Ping ()**
+    Позволяет приложению определить, доступен ли удаленный компьютер по сети.
 
 * **TCP** - первичный, гарантирует упорядоченную доставку данных от пользователя к серверу (и наоборот).
 * **UDP** - не гарантирует отправку сообщений, доставляет пакеты вразнобой, но бысрее при условии одинакого количества данных.

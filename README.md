@@ -10,7 +10,7 @@
  ```C#
     string host = "yandex.ru";
     IPAddress[] addresses = Dns.GetHostAddresses(host, System.Net.Sockets.AddresFamily.InterNetwork);
-   Console.Write($"Найдено {addresses.Length} адресов");
+    Console.Write($"Найдено {addresses.Length} адресов");
     Dictionary<IPAdress, long> pings = new();  
   
    foreach(IPAdress address in addresses) {

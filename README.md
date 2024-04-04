@@ -111,3 +111,5 @@ public class Customer
     public DateTime BirthDate { get; set; }
 ```
 Подход **Database-First**, появившийся вместе c Entity Framework, позволяет писать приложения для существующих баз данных. 
+# **NetMQ**
+Это библиотека ZeroMQ для C#, она позволяет установить соединение между различными узлами и обмениваться сообщениями через пакеты NuGet.

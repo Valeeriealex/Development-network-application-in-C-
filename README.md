@@ -111,5 +111,14 @@ public class Customer
     public DateTime BirthDate { get; set; }
 ```
 Подход **Database-First**, появившийся вместе c Entity Framework, позволяет писать приложения для существующих баз данных. 
+
+# **UDP**
+Это сетевой протокол, который позволяет доставить данные на удаленный узел.  
+Ключевым классом для отправки и приема данных по протоколу UDP является стандартный класс Socket. Но чтобы сокет работал с протоколом UDP, для него надо установить в качестве типа SocketType.Dgram, а в качестве протокола - ProtocolType.Udp  
+```C#
+using System.Net.Sockets;
+using Socket udpSocket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+```
+
 # **NetMQ**
-Это библиотека ZeroMQ для C#, она позволяет установить соединение между различными узлами и обмениваться сообщениями через пакеты NuGet.
+Это библиотека ZeroMQ для C#, она позволяет установить соединение между различными узлами и обмениваться сообщениями через пакеты-сокеты NuGet.

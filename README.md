@@ -19,6 +19,16 @@
   Есть два вида синхронизации — односторонняя и двусторонняя в **многопоточности**.
   Класс **= new Thread(() => Function(x, y))**
   Позволяет одному потоку передать выполнение другому потоку.
+   ```C#
+    // создаем новый поток
+  Thread myThread1 = new Thread(Print); 
+  Thread myThread2 = new Thread(new ThreadStart(Print));
+  Thread myThread3 = new Thread(()=>Console.WriteLine("Hello Threads"));
+   
+  myThread1.Start();  // запускаем поток myThread1
+  myThread2.Start();  // запускаем поток myThread2
+  myThread3.Start();  // запускаем поток myThread3
+  ```
   Потоки бывают — главные и фоновые.
   Критическая секция - это блок кода, исполняемы определенным потоком в один момент времени.
   ThreadPool - многопоточность в процессоре.
